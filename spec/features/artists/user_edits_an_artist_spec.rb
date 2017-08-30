@@ -22,6 +22,6 @@ RSpec.feature "User visits edit page for artist" do
     expect(page).to have_content("Snobbles McGoggles")
 
     # Then I should see the existing image
-    # I DON"T KNOW HOW TO TEST THIS!
+    expect(page).to have_xpath("//img[@src='https://upload.wikimedia.org/wikipedia/en/9/9e/Lionel_Richie_Hello.jpg']")
   end
 end

@@ -2,7 +2,7 @@
 
 <% @artists.each do |artist| %>
 <h1><%= link_to artist.name, artist_path(artist) %></h1>
-<img src="#{artist.image_path}" alt="Picture of Artist">
+<img src="<%= artist.image_path %>" alt="Picture of Artist">
 <% end %>
 
 <%= link_to "New artist", new_artist_path %>

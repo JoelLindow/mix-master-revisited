@@ -15,7 +15,6 @@ RSpec.feature "User visits artist page" do
 
     # Then I should be back on the artist index page
     # Then I should not see the artist's name
-
     expect(page).to_not have_content("Lionel Richie")
     expect(page).to have_content("Marty Robbins")
   end
